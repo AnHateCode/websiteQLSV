@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>QLSV</display-name>
+  <welcome-file-list>
+		<welcome-file>clientHome</welcome-file>
+	</welcome-file-list>
+
+	<context-param>
+		<param-name>jdbcURL</param-name>
+		<param-value>jdbc:mysql://localhost:3306/qlsv_vnua_edu_2?useUnicode=true&amp;characterEncoding=UTF-8&amp;serverTimezone=UTC</param-value>
+	</context-param>
+	<context-param>
+		<param-name>jdbcUsername</param-name>
+		<param-value>root</param-value>
+	</context-param>
+	<context-param>
+		<param-name>jdbcPassword</param-name>
+		<param-value>16072002</param-value>
+	</context-param>
+
+<servlet>
+    <servlet-name>ChatRoomViewServlet</servlet-name>
+    <jsp-file>/views/chatRoomView.jsp</jsp-file>
+</servlet>
+<servlet-mapping>
+    <servlet-name>ChatRoomViewServlet</servlet-name>
+    <url-pattern>/chatRoomView</url-pattern>
+</servlet-mapping>
+	
+</web-app>

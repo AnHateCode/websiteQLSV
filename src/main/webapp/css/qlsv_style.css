@@ -1,0 +1,244 @@
+@charset "UTF-8";
+*{
+	box-sizing: border-box;
+}
+th, td{
+	padding: 5px;
+}
+table{
+	border-collapse: collapse;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 100%;;
+    height: 789px;
+    display: flex;
+}
+
+.dashboard {
+    background-color: #152259;
+    color: #fff;
+    width: 250px;
+    height: 100%;
+    padding: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.logo-link {
+    display: block; /* Chuyển thành khối để chiếm toàn bộ không gian của thẻ a */
+    text-align: center;
+    margin-bottom: 20px;
+    text-decoration: none;
+    
+}
+
+.logo-link img {
+    width: 150px; /* Điều chỉnh kích thước của logo */
+    height: auto;
+    text-decoration: none;
+}
+
+.divider {
+    height: 1px;
+    background-color: #fff;
+    margin: 40px 0px 20px 0px; /* Khoảng cách trên và dưới vạch trắng */
+}
+
+.dashboard ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.dashboard li {
+    padding: 10px 0;
+  
+}
+.dashboard li a {
+    text-decoration: none;
+    color: #fff;
+}
+.dashboard li:hover {
+    background-color: #509CDB;
+    cursor: pointer;
+}
+
+.header-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.header {
+    background-color: #FCFAFA;
+    color: #152259;
+    padding: 20px;
+    text-align: center;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+.login-section a {
+    text-decoration: none; /* Remove underline */
+    padding: 5px 10px; /* Add padding */
+    border-radius: 5px; /* Add border radius */
+}
+
+.login-section .login-link {
+    background-color: #509CDB; /* Green color for login */
+    color: #fff; /* White text color */
+}
+
+.login-section .logout-link {
+    background-color: #509CDB; /* Red color for logout */
+    color: #fff; /* White text color */
+}
+
+.login-section a:hover {
+    opacity: 0.8; /* Reduce opacity on hover */
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width: 200px; /* Độ rộng của dropdown */
+}
+
+/* Style cho nút dropdown */
+.dropdown-btn {
+  background-color: #fff; /* Màu nền của dropdown */
+  color: #333; /* Màu chữ của dropdown */
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc; /* Đường viền của dropdown */
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Style cho các option */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  border-radius: 5px;
+}
+
+.dropdown-content a {
+  color: #333; /* Màu chữ của option */
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd; /* Màu nền khi hover */
+}
+
+/* Hiển thị dropdown content khi hover vào dropdown btn */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Hiển thị dropdown content khi focus vào dropdown btn */
+.dropdown:focus .dropdown-content {
+  display: block;
+}
+
+/* Hiển thị dropdown content khi dropdown btn được active */
+.dropdown:active .dropdown-content {
+  display: block;
+}
+
+.v_menu{
+	width: 100%;
+	
+}
+
+.v_menu a{
+	background-color: #eee;
+	color: black;
+	display: block;
+	padding: 10px;
+	text-decoration: none;
+}
+
+.v_menu a:hover{
+	background-color: #ccc;
+	
+}
+
+.footer{
+	padding: 20px;
+	text-align: center;
+	background: #ddd;
+	margin-top: 20px;
+}
+
+.row{
+	display: table;
+	width: 100%;
+}
+
+.leftcolumn{
+	float: left;
+	width: 25%;
+}
+
+.rightcolumn{
+	float: left;
+	width: 75%;
+	background-color: #f1f1f1;
+	padding-left: 20px;
+}
+
+.block {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  width: 100%;
+  display: flex; /* Sử dụng flexbox */
+  flex-wrap: wrap; /* Cho phép các item_content xuống dòng khi không đủ không gian */
+  justify-content: space-around; /* Căn các item_content theo chiều ngang */
+}/*///////////////////////////////////////*/
+
+.item_content {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  margin: 0px 20px 20px 20px;
+  text-align: center;
+  background-color: #f1f1f1;
+  float: left;
+  width: 25%;
+  display: flex; /* Sử dụng flexbox */
+  flex-direction: column; /* Đặt hướng của flexbox thành dọc */
+  justify-content: center; /* Căn giữa các item_content theo chiều dọc */
+}
+
+.lock-button {
+    background-color: transparent;
+    border: 1px solid #3498db; /* Màu viền nút */
+    color: #3498db; /* Màu chữ */
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px; /* Góc bo tròn */
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.lock-button:hover {
+    background-color: #3498db; /* Màu nền khi hover */
+    color: #fff; /* Màu chữ khi hover */
+}
